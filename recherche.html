@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Service - Recherche</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carpooling Service</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recherche.html">Search</a></li>
+            <li><a href="profil.html">Profile</a></li>
+        </ul>
+    </nav>
+    <!-- Le contenu de la page de recherche -->
+    <footer>
+        
+    </footer>
+	<!-- Content of the search page -->
+<section>
+    <h2>Search for a Ride</h2>
+    <form id="searchForm">
+        <label for="departure">Departure City:</label>
+        <input type="text" id="departure" name="departure" required>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <label for="date">Date of Trip:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Search Ride</button>
+    </form>
+</section>
+<footer>
+   
+</footer>
+
+<!-- JavaScript for Real-time Form Validation -->
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        // Get the selected date
+        var selectedDate = new Date(document.getElementById('date').value);
+        
+        // Get today's date
+        var today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        // Check if the selected date is in the future
+        if (selectedDate <= today) {
+            alert('Please select a future date for the trip.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Service - Search</title>
+    <link rel="stylesheet" href="css/styles_carpooling.css">
+</head>
+<body>
+    <header>
+        <h1>Carpooling Service</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recherche.html">Search</a></li>
+            <li><a href="profil.html">Profile</a></li>
+        </ul>
+    </nav>
+    <!-- Content of the search page -->
+    <section>
+        <h2>Search for a Ride</h2>
+        <form id="searchForm">
+            <label for="departure">Departure City:</label>
+            <input type="text" id="departure" name="departure" required>
+
+            <label for="destination">Destination:</label>
+            <input type="
+
+</script>
+</body>
+</html>
+
+</body>
+</html>
